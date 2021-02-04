@@ -1,5 +1,5 @@
 class StoreC:
-    def __init__(self, itemName, check):
-        self.itemName = itemName
+    def __init__(self, name, check):
+        self.name = name
         self.check = check
-        self.print_all = itemName + ',' + check 
+        self.print_all = name + ',' + check 
