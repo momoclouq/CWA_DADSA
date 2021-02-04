@@ -1,0 +1,28 @@
+ITEM No.,NAME,COST (£),STORE A,STORE B,STORE C
+1,White Bread loaf large,£1.00,Y,,Y
+2,Brown Bread loaf large,£1.20,,Y,
+3,Bread Sliced White large,£0.60,Y,Y,Y
+4,Bread Sliced Brown large,£0.70,Y,Y,
+5,Skimmed Milk Pint,£0.55,Y,,
+6,Full Fat Milk Pint,£0.50,Y,Y,Y
+7,Cheddar Cheese Medium 300g,£2.25,Y,Y,Y
+8,Cheddar Cheese Mature 300g,£2.50,Y,,Y
+9,Tomatoes Plum Can 500g,£0.85,Y,,
+10,Tomatoes Fresh Vine 500g,£2.00,Y,Y,
+11,Carrots 1Kg,£1.29,Y,Y,Y
+12,Potatoes 600g,£0.92,Y,Y,Y
+13,Rice White 500g,£0.90,Y,Y,
+14,Rice Brown 500g,£1.22,,,Y
+15,Butter 500g,£1.25,Y,Y,Y
+16,Bacon 300g,£1.75,,Y,Y
+17,Eggs Free Range Medium 12,£1.22,Y,,
+18,Ham 300g,£2.23,Y,Y,Y
+19,Apples Red pack of 6,£1.54,,Y,Y
+20,Apples Green pack of 6,£1.50,Y,,Y
+21,Frozen Peas 800g,£1.37,Y,Y,Y
+22,Onions Red 300g,£0.54,Y,,
+23,Fresh onions 300g,£0.45,,Y,
+24,Kitchen Roll 200 Sheets,£1.99,Y,,Y
+25,Toilet Roll 16 pack,£5.99,Y,Y,Y
+26,Tea Bags 50 pack,£1.39,Y,Y,Y
+27,Coffee 100 g,£1.27,,Y,
