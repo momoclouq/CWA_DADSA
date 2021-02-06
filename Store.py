@@ -1,4 +1,4 @@
-class allStore:
+class Store:
     def __init__(self, item, name):
         self.item = []
         self.name = name

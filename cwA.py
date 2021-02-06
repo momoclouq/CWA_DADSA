@@ -1,6 +1,6 @@
 import csv
 
-from allStore  import allStore
+from Store  import Store
 from Order  import Order
 
 
@@ -18,7 +18,7 @@ class DoublyLinkedList:
         self.tail = None
     
     
-    def initStoreList(self):
+    def initStoreList(self): #insert data from shoplist into stores
         with open('shoplist.csv') as csv_file:
             reader = csv.reader(csv_file, delimiter=',')
             row1 = next(reader)
@@ -36,9 +36,9 @@ class DoublyLinkedList:
                     tempItemC.append(tempItem)
            
             
-            tempStoreA = allStore(tempItemA, row1[3])
-            tempStoreB = allStore(tempItemB, row1[4])
-            tempStoreC = allStore(tempItemC, row1[5])
+            tempStoreA = Store(tempItemA, row1[3])
+            tempStoreB = Store(tempItemB, row1[4])
+            tempStoreC = Store(tempItemC, row1[5])
             store.insert(tempStoreA)
             store.insert(tempStoreB)
             store.insert(tempStoreC)
@@ -54,7 +54,7 @@ class DoublyLinkedList:
             tempitem.pop(0)
             row2 = next(reader)
 
-                
+            #add order from file to linklist    
             b = 1
             c = 0
             item = []
@@ -81,7 +81,7 @@ class DoublyLinkedList:
     #def sortOrder(self)
 
     
-    def itemSearch(self, value):
+    def itemSearch(self, value): #search list by name
         x = False
         n = self.head
         head = n
@@ -103,7 +103,7 @@ class DoublyLinkedList:
         else:
             return None
 
-    def insert(self, data):
+    def insert(self, data): #method add to link list
         if self.head is None:
             new_node = Node(data)
             self.head = new_node
@@ -115,7 +115,7 @@ class DoublyLinkedList:
         n.next = new_node
         new_node.pre = n
     
-    def sortNodes(self):
+    def sortNodes(self): #sort list
         if self.head is None:
             return;
         else:
@@ -165,9 +165,8 @@ order.initOrderList()
 store.initStoreList()
 
 #ans = input("Enter Store  : ")
-#result = store.itemSearch(ans)
-
-
+#b = result.name
+#print(b)
 #b = result.order
 #print(result)
 #print(b)
