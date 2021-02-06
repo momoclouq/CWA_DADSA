@@ -6,14 +6,14 @@ class Store:
         self.name = name
     
     #method for usage
-    def checkInStore(item):
+    def checkInStore(self, item):
         #check if item is in the store
         #use binary search, based on the fact that the items are sorted
-        return binary_search(0, self.item.len(), item)
+        return self.binary_search(0, len(self.item), item)
 
-    def sortStore():
+    def sortStore(self):
         #sort the items in the store for faster searching (binary search)
-        return;
+        return
 
     
     ############################
@@ -29,18 +29,18 @@ class Store:
                 return True
             #If element is smaller than the middle value -> search in the lower half
             elif self.item[mid] > x:
-                return binary_search(arr, low, mid - 1, x)
+                return self.binary_search(low, mid - 1, x)
             #If element is larger than the middle value -> search in the upper half
             else:
-                return binary_search(arr, mid + 1, high, x)
+                return self.binary_search(mid + 1, high, x)
             
         else:
             # Element is not present in the array
             return False
 
 
-    def quick_sort():
-        return;
+    def quick_sort(self):
+        return
 
     
     
